@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "student-api"
+    }
+  },
+  "defaultProject": "student-api",
+  "cli": {
+    "analytics": "e70cd4e9-f88e-4bde-8558-d41b84758009"
+  }
 }

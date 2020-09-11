@@ -1,0 +1,24 @@
+<div class="content">
+  <form action="" [formGroup]="formAddStudent" (ngSubmit)="add()">
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Student name</label>
+        <input type="text" class="form-control"  formControlName="name" placeholder="vd: 1">
+      </div>
+      <div class="form-group">
+        <label >Student age</label>
+        <input type="text" class="form-control" formControlName="age" placeholder="vd: Thanh Tung">
+      </div>
+      <div class="form-group">
+        <label >Student gender</label>
+        <input type="text" class="form-control" formControlName="gender" placeholder="vd: nvluc0608@gmail.com">
+      </div>
+      <div class="form-group">
+        <label >Student address</label>
+        <input type="text" class="form-control" formControlName="address" placeholder="vd: 123456">
+      </div>
+    </div>
+    <a href="" class="btn btn-secondary" routerLink="">Close</a>
+    <button class="btn btn-primary">ADD</button>
+  </form>
+</div>

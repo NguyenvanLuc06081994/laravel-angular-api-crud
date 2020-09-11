@@ -1,0 +1,25 @@
+
+<table class="table">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">no</th>
+    <th scope="col">name</th>
+    <th scope="col">age</th>
+    <th scope="col">gender</th>
+    <th scope="col">address</th>
+    <th scope="col" colspan="2">action</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of listStudents; let i = index;">
+      <td>{{i+1}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.age}}</td>
+      <td>{{student.gender}}</td>
+      <td>{{student.address}}</td>
+      <td><a class="btn btn-primary" [routerLink]="[student.id]" href="">edit</a></td>
+      <td><a (click)="delete(i)" class="btn btn-danger" >delete</a></td>
+    </tr>
+  </tbody>
+</table>
+<a href="" class="btn btn-success" [routerLink]="['add']">ADD NEW STUDENT</a>
